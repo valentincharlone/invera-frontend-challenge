@@ -46,15 +46,6 @@
       "status": "Offline"
     },
     {
-      "id": 6,
-      "name": "Andy Smith",
-      "email": "andy@reddit.com",
-      "phone": "(424) 458-3268",
-      "location": "United States",
-      "company": "Reddit",
-      "status": "Online"
-    },
-    {
       "id": 7,
       "name": "Lilly Woods",
       "email": "lilly@spotify.com",
@@ -82,15 +73,6 @@
       "status": "Offline"
     },
     {
-      "id": 10,
-      "name": "Ernest Houston",
-      "email": "ernest@linkedin.com",
-      "phone": "(704) 339-8813",
-      "location": "India",
-      "company": "LinkedIn",
-      "status": "Offline"
-    },
-    {
       "id": 11,
       "name": "Miguel Sánchez",
       "email": "miguel@apple.com",
@@ -98,15 +80,6 @@
       "location": "Spain",
       "company": "Apple",
       "status": "Online"
-    },
-    {
-      "id": 12,
-      "name": "Emily Johnson",
-      "email": "emily@microsoft.com",
-      "phone": "(206) 555-9876",
-      "location": "United States",
-      "company": "Microsoft",
-      "status": "Offline"
     },
     {
       "id": 13,
@@ -127,24 +100,6 @@
       "status": "Offline"
     },
     {
-      "id": 15,
-      "name": "Camille Dubois",
-      "email": "camille@airbnb.com",
-      "phone": "(331) 555-2468",
-      "location": "France",
-      "company": "Airbnb",
-      "status": "Online"
-    },
-    {
-      "id": 16,
-      "name": "David Lee",
-      "email": "david@samsung.com",
-      "phone": "(822) 555-1357",
-      "location": "South Korea",
-      "company": "Samsung",
-      "status": "Offline"
-    },
-    {
       "id": 17,
       "name": "Isabella Rossi",
       "email": "isabella@adobe.com",
@@ -154,15 +109,6 @@
       "status": "Online"
     },
     {
-      "id": 18,
-      "name": "Aditya Patel",
-      "email": "aditya@tata.com",
-      "phone": "(912) 555-9753",
-      "location": "India",
-      "company": "Tata",
-      "status": "Offline"
-    },
-    {
       "id": 19,
       "name": "Olivia Wilson",
       "email": "olivia@shopify.com",
@@ -170,15 +116,6 @@
       "location": "Canada",
       "company": "Shopify",
       "status": "Online"
-    },
-    {
-      "id": 20,
-      "name": "Ahmed Hassan",
-      "email": "ahmed@aramco.com",
-      "phone": "(966) 555-2468",
-      "location": "Saudi Arabia",
-      "company": "Aramco",
-      "status": "Offline"
     },
     {
       "id": 21,
@@ -199,15 +136,6 @@
       "status": "Offline"
     },
     {
-      "id": 23,
-      "name": "Fatima Al-Farsi",
-      "email": "fatima@adnoc.com",
-      "phone": "(971) 555-9012",
-      "location": "UAE",
-      "company": "ADNOC",
-      "status": "Online"
-    },
-    {
       "id": 24,
       "name": "Thomas Schmidt",
       "email": "thomas@bmw.com",
@@ -223,24 +151,6 @@
       "phone": "(551) 555-7890",
       "location": "Brazil",
       "company": "Petrobras",
-      "status": "Online"
-    },
-    {
-      "id": 26,
-      "name": "Daniel Kim",
-      "email": "daniel@lg.com",
-      "phone": "(822) 555-2345",
-      "location": "South Korea",
-      "company": "LG",
-      "status": "Offline"
-    },
-    {
-      "id": 27,
-      "name": "Emma Wilson",
-      "email": "emma@canva.com",
-      "phone": "(612) 555-6789",
-      "location": "Australia",
-      "company": "Canva",
       "status": "Online"
     },
     {
@@ -271,15 +181,6 @@
       "status": "Offline"
     },
     {
-      "id": 31,
-      "name": "Ana Rodriguez",
-      "email": "ana@telefonica.com",
-      "phone": "(349) 555-2345",
-      "location": "Spain",
-      "company": "Telefonica",
-      "status": "Online"
-    },
-    {
       "id": 32,
       "name": "James Wilson",
       "email": "james@atlassian.com",
@@ -298,15 +199,6 @@
       "status": "Online"
     },
     {
-      "id": 34,
-      "name": "Carlos Mendoza",
-      "email": "carlos@pemex.com",
-      "phone": "(525) 555-4567",
-      "location": "Mexico",
-      "company": "Pemex",
-      "status": "Offline"
-    },
-    {
       "id": 35,
       "name": "Natalie Chen",
       "email": "natalie@baidu.com",
@@ -322,42 +214,6 @@
       "phone": "(918) 555-2345",
       "location": "India",
       "company": "Wipro",
-      "status": "Offline"
-    },
-    {
-      "id": 37,
-      "name": "Chloe Durand",
-      "email": "chloe@loreal.com",
-      "phone": "(331) 555-6789",
-      "location": "France",
-      "company": "L'Oreal",
-      "status": "Online"
-    },
-    {
-      "id": 38,
-      "name": "Antonio Rossi",
-      "email": "antonio@ferrari.com",
-      "phone": "(399) 555-0123",
-      "location": "Italy",
-      "company": "Ferrari",
-      "status": "Offline"
-    },
-    {
-      "id": 39,
-      "name": "Elizabeth Taylor",
-      "email": "elizabeth@hsbc.com",
-      "phone": "(447) 555-4567",
-      "location": "United Kingdom",
-      "company": "HSBC",
-      "status": "Online"
-    },
-    {
-      "id": 40,
-      "name": "Andre Silva",
-      "email": "andre@embraer.com",
-      "phone": "(551) 555-8901",
-      "location": "Brazil",
-      "company": "Embraer",
       "status": "Offline"
     },
     {
@@ -406,24 +262,6 @@
       "status": "Online"
     },
     {
-      "id": 46,
-      "name": "Amara Okafor",
-      "email": "amara@mtn.com",
-      "phone": "(234) 555-2345",
-      "location": "Nigeria",
-      "company": "MTN",
-      "status": "Offline"
-    },
-    {
-      "id": 47,
-      "name": "Benjamin Brown",
-      "email": "benjamin@nab.com",
-      "phone": "(612) 555-6789",
-      "location": "Australia",
-      "company": "NAB",
-      "status": "Online"
-    },
-    {
       "id": 48,
       "name": "Rana Kapoor",
       "email": "rana@tcs.com",
@@ -449,6 +287,60 @@
       "location": "Egypt",
       "company": "Elsewedy",
       "status": "Offline"
+    },
+    {
+      "name": "Juan Ramirez",
+      "email": "juan@gmail.com",
+      "phone": "+542494008950",
+      "location": "Tandil, Buenos Aires, ARG",
+      "company": "Microsfot",
+      "status": "Online",
+      "id": 51
+    },
+    {
+      "name": "Valentin",
+      "email": "valencharlone@gmail.com",
+      "phone": "+542494008950",
+      "location": "Tandil",
+      "company": "Microsfot",
+      "status": "Offline",
+      "id": 52
+    },
+    {
+      "name": "Valentin",
+      "email": "valencharlone@gmail.com",
+      "phone": "+542494008950",
+      "location": "Tandil",
+      "company": "Microsfot",
+      "status": "Offline",
+      "id": 53
+    },
+    {
+      "name": "Valentin",
+      "email": "valencharlone@gmail.com",
+      "phone": "+542494008950",
+      "location": "Tandil",
+      "company": "Microsfot",
+      "status": "Online",
+      "id": 54
+    },
+    {
+      "name": "Joaco",
+      "email": "valencharlone@gmail.com",
+      "phone": "+542494008950",
+      "location": "Brasil",
+      "company": "nvdia",
+      "status": "Offline",
+      "id": 55
+    },
+    {
+      "name": "Valentin",
+      "email": "valencharlone@gmail.com",
+      "phone": "+542494008950",
+      "location": "Tandil, Buenos Aires, ARG",
+      "company": "Microsfot",
+      "status": "Online",
+      "id": 56
     }
   ],
   "statics": {
