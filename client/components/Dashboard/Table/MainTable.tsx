@@ -58,7 +58,7 @@ export function MainTable() {
         setUsers(users);
         setTotalUsers(total);
       } catch (error) {
-        console.error("Error fetching users:", error);
+        console.error(error as string);
       } finally {
         setLoading(false);
       }
@@ -137,7 +137,7 @@ export function MainTable() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="rounded-lg border border-[#5F5F5F] bg-card overflow-hidden">
+      <div className="rounded-xl border border-[#5F5F5F] bg-card overflow-hidden ">
         <TableHeader
           title="All Users"
           searchValue={searchValue}
@@ -146,53 +146,51 @@ export function MainTable() {
           handleKeyDown={handleKeyDown}
         />
 
-        <div className="border">
-          <Table>
-            <UITableHeader className="hidden md:table-header-group">
-              <TableRow>
-                <TableHead className="pl-6">
+        <Table>
+          <UITableHeader className="hidden md:table-header-group ">
+            <TableRow className="border-t border-[#5F5F5F]">
+              <TableHead className="pl-6">
+                <Checkbox className="rounded-[2px] w-3 h-3 border border-[#5F5F5F]" />
+              </TableHead>
+              {TABLE_COLUMNS.map((column) => (
+                <TableColumnHeader
+                  key={column.key}
+                  column={column.key}
+                  label={column.label}
+                  handleSort={handleSort}
+                />
+              ))}
+            </TableRow>
+          </UITableHeader>
+
+          <UITableHeader className="md:hidden ">
+            <TableRow className="border-t border-[#5F5F5F]">
+              <TableHead className="pl-6" colSpan={2}>
+                <div className="flex items-center space-x-2">
                   <Checkbox className="rounded-[2px] w-3 h-3" />
-                </TableHead>
-                {TABLE_COLUMNS.map((column) => (
-                  <TableColumnHeader
-                    key={column.key}
-                    column={column.key}
-                    label={column.label}
-                    handleSort={handleSort}
+                  <User className="h-4 w-4 mr-1" />
+                  <span>Name</span>
+                </div>
+              </TableHead>
+            </TableRow>
+          </UITableHeader>
+
+          <TableBody>
+            {loading
+              ? renderLoadingSkeleton()
+              : users.length === 0
+              ? renderEmptyState()
+              : users.map((user, index) => (
+                  <UserRow
+                    key={user.id}
+                    index={index}
+                    user={user}
+                    onUserDeleted={refreshData}
+                    onUserUpdated={refreshData}
                   />
                 ))}
-              </TableRow>
-            </UITableHeader>
-
-            <UITableHeader className="md:hidden">
-              <TableRow>
-                <TableHead className="pl-6" colSpan={2}>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox className="rounded-[2px] w-3 h-3" />
-                    <User className="h-4 w-4 mr-1" />
-                    <span>Name</span>
-                  </div>
-                </TableHead>
-              </TableRow>
-            </UITableHeader>
-
-            <TableBody>
-              {loading
-                ? renderLoadingSkeleton()
-                : users.length === 0
-                ? renderEmptyState()
-                : users.map((user, index) => (
-                    <UserRow
-                      key={user.id}
-                      index={index}
-                      user={user}
-                      onUserDeleted={refreshData}
-                      onUserUpdated={refreshData}
-                    />
-                  ))}
-            </TableBody>
-          </Table>
-        </div>
+          </TableBody>
+        </Table>
       </div>
       <TablePagination
         totalUsers={totalUsers}

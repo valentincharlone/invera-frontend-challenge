@@ -29,7 +29,7 @@ export function TableHeader({
         <Input
           type="text"
           placeholder="Search for..."
-          className="pl-8 rounded-[4px]"
+          className="pl-8 rounded-[4px] border border-[#5F5F5F]"
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
           onKeyDown={handleKeyDown}

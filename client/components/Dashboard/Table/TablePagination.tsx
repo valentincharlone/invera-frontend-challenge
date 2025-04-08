@@ -40,10 +40,12 @@ export function TablePagination({
       </div>
       <div className="flex items-center space-x-8">
         <div className="flex items-center space-x-2">
-          <span className="text-sm text-muted-foreground">Rows per page:</span>
+          <span className="text-sm font-medium text-[#FCFCFC]">
+            Rows per page:{" "}
+          </span>
           <Select value={String(limit)} onValueChange={handleLimitChange}>
-            <SelectTrigger className="h-8 w-[70px]">
-              <SelectValue placeholder={limit} />
+            <SelectTrigger className="h-8 w-fit border border-[#5F5F5F] gap-2">
+              <SelectValue className="pr-2" placeholder={limit} />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="5">5</SelectItem>
@@ -59,6 +61,7 @@ export function TablePagination({
             size="icon"
             onClick={() => handlePageChange(page - 1)}
             disabled={page <= 1}
+            className="border border-[#5F5F5F]"
           >
             <ChevronLeft className="h-4 w-4" />
           </Button>
@@ -67,6 +70,7 @@ export function TablePagination({
             size="icon"
             onClick={() => handlePageChange(page + 1)}
             disabled={page >= totalPages}
+            className="border border-[#5F5F5F]"
           >
             <ChevronRight className="h-4 w-4" />
           </Button>

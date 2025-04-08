@@ -38,7 +38,7 @@ export function Cards({ statistics }: StatCardsProps) {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {stats.map((stat) => (
-        <Card key={stat.title} className="bg-card border border-[#5F5F5F]">
+        <Card key={stat.title} className="bg-card border border-[#5F5F5F] rounded-xl">
           <CardContent className="flex items-center justify-between p-6">
             <div className="flex items-center space-x-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-background">

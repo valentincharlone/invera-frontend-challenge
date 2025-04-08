@@ -95,31 +95,43 @@ export function UserRow({
 
   return (
     <>
-      <TableRow className={index % 2 === 1 ? "bg-[#5F5F5F]/10" : ""}>
-        <TableCell className="px-6">
-          <Checkbox className="rounded-[2px]" />
+      <TableRow
+        className={
+          index % 2 === 1
+            ? "bg-[#5F5F5F]/10 border-b border-[#5F5F5F]"
+            : "border-[#5F5F5F]"
+        }
+      >
+        <TableCell className="px-6 ">
+          <Checkbox className="rounded-[2px] border border-[#5F5F5F] " />
         </TableCell>
-        <TableCell className="py-4">
+        <TableCell className="py-4 pl-2 md:pl-0">
           <div className="flex items-center space-x-3">
-            <div className="h-10 w-10 overflow-hidden rounded-full bg-muted relative">
+            <div className="relative w-[28px] h-[28px] md:w-[40px] md:h-[40px] rounded-full overflow-hidden">
               <Image
                 src={`https://ui-avatars.com/api/?name=${encodeURIComponent(
                   user.name
                 )}&background=random`}
                 alt={user.name}
                 fill
-                sizes="40px"
+                sizes="(max-width: 768px) 28px, 40px"
                 className="object-cover"
               />
             </div>
             <div>
-              <p className="font-medium text-white">{user.name}</p>
-              <p className="text-xs text-muted-foreground">{user.email}</p>
+              <p className="font-medium text-[#FCFCFC] text-[11px]">
+                {user.name}
+              </p>
+              <p className="text-[11px]  text-[#BABABA]">{user.email}</p>
             </div>
           </div>
         </TableCell>
-        <TableCell className="hidden md:table-cell text-[#BABABA]">{user.phone}</TableCell>
-        <TableCell className="hidden md:table-cell text-[#BABABA]">{user.location}</TableCell>
+        <TableCell className="hidden md:table-cell text-[#BABABA]">
+          {user.phone}
+        </TableCell>
+        <TableCell className="hidden md:table-cell text-[#BABABA]">
+          {user.location}
+        </TableCell>
         <TableCell className="hidden md:table-cell text-[#BABABA]">
           <div className="flex items-center space-x-2">
             <span>{user.company}</span>

@@ -18,7 +18,7 @@ export async function Dashboard() {
 
       <Cards statistics={statistics} />
 
-      <div className="rounded-lg border border-[#5F5F5F] bg-card px-6 py-8">
+      <div className="rounded-xl border border-[#5F5F5F] bg-card px-6 py-8">
         <h2 className="mb-6 text-lg font-bold text-white">Estadístics</h2>
         <Suspense
           fallback={
