@@ -104,7 +104,7 @@ export function UserDialog({
   return (
     <>
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="sm:max-w-[525px] bg-black">
+        <DialogContent className="w-[calc(100%-32px)] sm:max-w-[525px] bg-black border border-[#5F5F5F] rounded-lg">
           <DialogHeader>
             <DialogTitle className="text-xl">
               {mode === "edit" ? "Edit User" : "Create User"}
@@ -221,7 +221,7 @@ export function UserDialog({
                     <SelectTrigger id="status" className="pl-9">
                       <SelectValue placeholder="Select status" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="bg-slate-950">
                       <SelectItem value="Online">Online</SelectItem>
                       <SelectItem value="Offline">Offline</SelectItem>
                     </SelectContent>

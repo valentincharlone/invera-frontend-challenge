@@ -174,7 +174,7 @@ export function UserRow({
         open={isDeleteDialogOpen}
         onOpenChange={setIsDeleteDialogOpen}
       >
-        <AlertDialogContent className="bg-black">
+        <AlertDialogContent className="w-[calc(100%-32px)]  bg-black border border-[#5F5F5F] rounded-xl">
           <AlertDialogHeader>
             <AlertDialogTitle>¿Estás seguro?</AlertDialogTitle>
             <AlertDialogDescription>
